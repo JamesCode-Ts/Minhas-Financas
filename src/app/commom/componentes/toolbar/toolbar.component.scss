@@ -1,0 +1,25 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .menu-item{
+    color: black;
+  }
+  a{
+    text-decoration: none;
+    
+    margin: 10px;
+  }
+
+  a:hover{
+    color: rgb(63, 56, 56);
+  }
+
+
+
+  .active{
+    color:rgba(16, 102, 160, 0.979);
+  }
+
+  a{
+    color: black;
+  }
