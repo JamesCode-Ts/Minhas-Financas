@@ -48,12 +48,16 @@
         <mat-card class="despesa">
             <mat-card-header class="center">
                 <mat-card-title class="titulo">
-                    Despesas
+                    Despesa
+                   
+
                 </mat-card-title>
             </mat-card-header>
         
             <mat-card-content class="center conteudo">
-                R$ 50,00
+                {{despesa | currency: 'BRL' }} 
+               
+
             </mat-card-content>
         </mat-card>
         
@@ -69,7 +73,7 @@
             </mat-card-header>
         
             <mat-card-content class="center conteudo">
-                R$ 0,00
+                {{saldo | currency: 'BRL' }} 
             </mat-card-content>
         </mat-card>
         

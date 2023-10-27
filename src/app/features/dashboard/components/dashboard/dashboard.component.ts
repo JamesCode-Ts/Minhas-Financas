@@ -37,14 +37,22 @@ export class DashboardComponent implements OnInit {
     this.dashboardService.getEntradas().subscribe(entradas =>{
       this.entradas = entradas;
       this.getReceitas();
+      this.getSaldo();
     })
   }
    
    getReceitas(){
     this.entradas.forEach((entrada: Entrada) =>{
-      this.receita += parseInt(entrada.valor);
+
+      if(entrada.tipo === 'receita'){
+        this.receita += parseInt(entrada.valor);
+      }else{
+        this.despesa += parseInt(entrada.valor);
+      }
+    
     })
    }
-
+  getSaldo(){
+    this.saldo = this.receita - this.despesa;  }
 
 }
