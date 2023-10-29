@@ -7,6 +7,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
     MatToolbarModule,
     MatIconModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule
   ],
   exports: [
     MatCardModule,
@@ -26,7 +29,8 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
     MatToolbarModule,
     MatIconModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule
 
   ]
 })
