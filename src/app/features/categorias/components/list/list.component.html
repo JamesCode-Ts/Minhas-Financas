@@ -1,4 +1,6 @@
 <div class="container">
+    <button mat-raised-button color="accent" (click)="novaCategoria()">Novo</button>
+
     <table mat-table [dataSource]="dataSource">
   
       <!-- Nome Column -->
@@ -22,7 +24,7 @@
                <!-- Descrição Column -->
         <ng-container matColumnDef="excluir">
             <th mat-header-cell *matHeaderCellDef> Excluir </th>
-            <td mat-cell *matCellDef="let element"><mat-icon style="color: rgb(223, 70, 70); cursor: pointer;">delete</mat-icon></td>
+            <td mat-cell *matCellDef="let element"><mat-icon (click)="excluir(element.id)" style="color: rgb(223, 70, 70); cursor: pointer;">delete</mat-icon></td>
           </ng-container>
   
   

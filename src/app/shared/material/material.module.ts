@@ -8,6 +8,7 @@ import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -21,7 +22,8 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     MatTableModule,
     MatPaginatorModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   exports: [
     MatCardModule,
@@ -30,7 +32,8 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     MatTableModule,
     MatPaginatorModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
 
   ]
 })

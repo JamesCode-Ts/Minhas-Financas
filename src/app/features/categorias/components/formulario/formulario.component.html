@@ -1,7 +1,6 @@
 
 
 <div class="container">
-
     <form class="example-form" [formGroup]="formCategoria">
         <mat-form-field class="example-full-width">
           <mat-label>Categoria</mat-label>
@@ -13,6 +12,8 @@
           <textarea matInput placeholder="Digite as informações importantes" formControlName="descricao"></textarea>
         </mat-form-field>
       </form>
+
+      <button mat-raised-button color="primary" [disabled]="!formCategoria.valid" (click)="salvarCategoria()">Salvar</button>
 
 </div>
 

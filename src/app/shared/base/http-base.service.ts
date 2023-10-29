@@ -35,6 +35,6 @@ export class HttpBaseService{
 }
 
 protected httpDelete(endpoint: string): Observable<any>{
-  return this.httpClient.get(`${this.apiBase}${endpoint}`);
+  return this.httpClient.delete(`${this.apiBase}${endpoint}`);
 }
 }
