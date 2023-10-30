@@ -5,17 +5,21 @@ import { EntradasRoutingModule } from './entradas-routing.module';
 import { ListComponent } from './components/list/list.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { MaterialModule } from 'src/app/shared/material/material.module';
+import { StatusPipe } from './pipes/status.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     ListComponent,
-    FormularioComponent
+    FormularioComponent,
+    StatusPipe
   ],
   imports: [
     CommonModule,
     EntradasRoutingModule,
-    MaterialModule
+    MaterialModule,
+  
   ]
 })
 export class EntradasModule { }

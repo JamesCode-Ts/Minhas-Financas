@@ -44,17 +44,22 @@ export class ListComponent  implements AfterViewInit, OnInit {
   }
 
   excluir(id: number){
-  /*  this.categoriaService.excluirCategoria(id).subscribe(resposta =>{
+    this.entradaService.exluirEntrada(id).subscribe(resposta =>{
       console.log(resposta);
-           this.buscarCategorias();
-    })
+           this.buscarEntradas();
+    });
   }
 
   novaCategoria(){
-    this.router.navigate(['categorias','nova-categoria'])
+    this.router.navigate(['categorias','nova-categoria']);
 
-  }
+  
 }
-**/
+
+  
+
+novaEntrada(){
+  this.router.navigate(['entradas','novo'])
 }
+
 }

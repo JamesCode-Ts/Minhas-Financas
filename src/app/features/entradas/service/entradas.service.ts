@@ -20,4 +20,9 @@ getEntradas(): Observable<any>{
   
   }
 
+
+  exluirEntrada(id:number): Observable<any>{
+    return this.httpDelete(`${this.endpoint}/${id}`);
+  }
+
 }

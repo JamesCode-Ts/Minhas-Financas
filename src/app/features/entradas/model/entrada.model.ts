@@ -7,6 +7,6 @@ export interface Entrada{
     categoriaId: number,
     pago: true,
     data: string,
-    valor: string,
+    valor: number,
     tipo: string
 }
