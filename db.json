@@ -24,6 +24,11 @@
       "nome": "Outros",
       "descricao": "Outros",
       "id": 5
+    },
+    {
+      "nome": "Estudos",
+      "descricao": "Gasto com cursos",
+      "id": 6
     }
   ],
   "entradas": [
