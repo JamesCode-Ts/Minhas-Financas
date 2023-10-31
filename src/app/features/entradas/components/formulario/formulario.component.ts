@@ -78,7 +78,7 @@ export class FormularioComponent implements OnInit {
       this.formEntradas.controls['categoriaId'].setValue(this.entrada.categoriaId);      
       this.formEntradas.controls['pago'].setValue(this.entrada.pago);      
       this.formEntradas.controls['tipo'].setValue(this.entrada.tipo);      
-      this.formEntradas.controls['data'].setValue(new Date(+data[2], +data[1], +data[0]));      
+      this.formEntradas.controls['data'].setValue(new Date(+data[2], +data[1] - 1, +data[0]));      
     });
 
   }

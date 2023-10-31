@@ -1,15 +1,13 @@
 
-
-
-
 <h1 class="title" >Minhas Finanças</h1>
-<div class="flex header">
 
-    <div >
+<form [formGroup]="formDashboard">
+<div class="flex header">
+    <div>
 
         <mat-form-field appearance="fill" class="input-item">
             <mat-label>Mês</mat-label>
-            <mat-select>
+            <mat-select formControlName="mes">
               <mat-option>Selecione o mês</mat-option>
               <mat-option *ngFor="let mes of meses" [value]="mes.value">{{mes.viewValue}}</mat-option>
             </mat-select>
@@ -20,13 +18,15 @@
         
         <mat-form-field appearance="fill" class="input-item">
           <mat-label>Ano</mat-label>
-          <mat-select>
+          <mat-select formControlName="ano">
             <mat-option value="2023" >2023</mat-option>
           </mat-select>
         </mat-form-field>
     </div>
 
-
+    <button class="input-item" style="height: 3rem;" mat-raised-button color="primary" 
+    [disabled]="formDashboard.invalid"
+    (click)="getEntradas()">Buscar</button>
 </div>
 
 <div class="flex card-item">
@@ -83,5 +83,7 @@
         
     </div>
 
-    
+   
+
 </div>
+</form>

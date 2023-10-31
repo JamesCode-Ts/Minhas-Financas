@@ -130,6 +130,15 @@
       "tipo": "despesa",
       "data": "14/04/2023",
       "id": 68
+    },
+    {
+      "nome": "Aniversário",
+      "categoriaId": 6,
+      "data": "20/11/2023",
+      "pago": true,
+      "tipo": "receita",
+      "valor": "500",
+      "id": 69
     }
   ]
 }
