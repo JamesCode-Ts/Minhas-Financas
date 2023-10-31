@@ -37,6 +37,9 @@ export class FormularioComponent implements OnInit {
   entrada!: Entrada;
   estaCriando: boolean = false;
 
+   /** Criando um Obserble, toda vez que adiciona um $ quer dizer que é Obserble */
+  //categorias$ = this.categoriaService.getCategorias();
+
   constructor(private readonly categoriaService: CategoriaService, 
     private formBuilder: FormBuilder,
     private readonly entradaService: EntradasService,
@@ -78,7 +81,7 @@ export class FormularioComponent implements OnInit {
       this.formEntradas.controls['categoriaId'].setValue(this.entrada.categoriaId);      
       this.formEntradas.controls['pago'].setValue(this.entrada.pago);      
       this.formEntradas.controls['tipo'].setValue(this.entrada.tipo);      
-      this.formEntradas.controls['data'].setValue(new Date(+data[2], +data[1] - 1, +data[0]));      
+      this.formEntradas.controls['data'].setValue(new Date(+data[2], +data[1], +data[0]));      
     });
 
   }
@@ -136,6 +139,7 @@ export class FormularioComponent implements OnInit {
   criarNovaEntrada(payload: Entrada){
     this.entradaService.criarEntrada(payload).subscribe(resposta =>{
       this.redirecionar();
+   
     })
   }
 editarEntrada(payload: Entrada){
@@ -148,6 +152,7 @@ editarEntrada(payload: Entrada){
 
 redirecionar(){
   this.router.navigate(['entradas']);
+  
 }
 
 }
