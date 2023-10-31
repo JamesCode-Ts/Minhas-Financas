@@ -10,6 +10,9 @@ import { MaterialModule } from './shared/material/material.module';
 /** Para configurar Data no formato pt-BR */
 import {LOCALE_ID} from "@angular/core";
 import localePt from "@angular/common/locales/pt";
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePt);
 
 
 @NgModule({

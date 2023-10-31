@@ -2,7 +2,7 @@
 
 export interface Entrada{
 
-    id: number,
+    id?: number,
     nome: string,
     categoriaId: number,
     pago: true,

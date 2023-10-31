@@ -19,35 +19,45 @@
       "nome": "Férias",
       "descricao": "Recebimento de férias",
       "id": 6
+    },
+    {
+      "nome": "Esportes",
+      "descricao": "Atividades Esportivas",
+      "id": 7
+    },
+    {
+      "nome": "Carro",
+      "descricao": "Carro",
+      "id": 8
     }
   ],
   "entradas": [
     {
-      "id": 1,
-      "nome": "Gás de Cozinha",
+      "nome": "Gás ",
       "categoriaId": 1,
-      "pago": true,
-      "data": "14/03/2023",
+      "data": "14/06/2023",
+      "pago": false,
+      "tipo": "despesa",
       "valor": 70.8,
-      "tipo": "despesa"
+      "id": 1
     },
     {
-      "id": 2,
       "nome": "Mercado",
       "categoriaId": 2,
+      "data": "14/05/2023",
       "pago": false,
-      "data": "14/03/2023",
-      "valor": 15,
-      "tipo": "despesa"
+      "tipo": "despesa",
+      "valor": "5000",
+      "id": 2
     },
     {
-      "id": 3,
-      "nome": "Salário na Empresa X",
+      "nome": "Salário ",
       "categoriaId": 4,
+      "data": "15/04/2023",
       "pago": true,
-      "data": "15/03/2023",
-      "valor": 4405.49,
-      "tipo": "receita"
+      "tipo": "receita",
+      "valor": "7000",
+      "id": 3
     },
     {
       "id": 11,
@@ -77,13 +87,13 @@
       "tipo": "despesa"
     },
     {
-      "id": 23,
       "nome": "Gasolina",
       "categoriaId": 2,
-      "pago": false,
-      "data": "21/04/2023",
+      "data": "21/05/2023",
+      "pago": true,
+      "tipo": "despesa",
       "valor": 130,
-      "tipo": "despesa"
+      "id": 23
     },
     {
       "id": 55,
@@ -93,6 +103,33 @@
       "data": "28/04/2023",
       "valor": 30,
       "tipo": "despesa"
+    },
+    {
+      "nome": "Academia",
+      "valor": "100",
+      "categoriaId": 2,
+      "pago": false,
+      "tipo": "Despesa",
+      "data": "31/10/2023",
+      "id": 57
+    },
+    {
+      "nome": "Porta",
+      "valor": "80",
+      "categoriaId": 1,
+      "pago": false,
+      "tipo": "despesa",
+      "data": "Invalid Date",
+      "id": 60
+    },
+    {
+      "nome": "Gás ",
+      "valor": 70.8,
+      "categoriaId": 1,
+      "pago": true,
+      "tipo": "despesa",
+      "data": "14/04/2023",
+      "id": 68
     }
   ]
 }

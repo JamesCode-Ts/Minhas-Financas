@@ -1,0 +1,48 @@
+
+/* Responsividade*/
+@media  screen and (max-width: 700px){
+    /* Para funcionar a tela tem que estar até no máximo 700px de largura */
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     
+    }
+
+ 
+}
+
+
+@media  screen and (min-width: 710px){
+     /* Para funcionar a tela tem que ter no minimo 710px de largura */
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80rem;
+        margin-left: 25rem;
+        margin-top: 2rem;
+    
+        
+        
+     
+    }
+        
+
+    }
+
+mat-form-field{
+    width: 20rem;
+    margin: 10px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    font-weight: 500;
+}

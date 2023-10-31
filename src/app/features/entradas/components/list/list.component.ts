@@ -40,7 +40,7 @@ export class ListComponent  implements AfterViewInit, OnInit {
    }
 
   chamarEdicao(entrada: Entrada){
-    this.router.navigate(['entrada','editar', entrada.id]);
+    this.router.navigate(['entradas','editar', entrada.id]);
   }
 
   excluir(id: number){

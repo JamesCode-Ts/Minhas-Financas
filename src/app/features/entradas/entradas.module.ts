@@ -6,7 +6,7 @@ import { ListComponent } from './components/list/list.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { MaterialModule } from 'src/app/shared/material/material.module';
 import { StatusPipe } from './pipes/status.pipe';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,6 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     EntradasRoutingModule,
     MaterialModule,
+    ReactiveFormsModule,
+    FormsModule
   
   ]
 })
