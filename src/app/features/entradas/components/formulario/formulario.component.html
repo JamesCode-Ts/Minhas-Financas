@@ -58,7 +58,7 @@
       </mat-form-field>
     </form>
 
-<button mat-raised-button color="primary"(click)="salvarEntrada()">Salvar</button>
+<button mat-raised-button color="primary"  [disabled]="!formEntradas.valid" (click)="salvarEntrada()">Salvar</button>
 
 </div>
 

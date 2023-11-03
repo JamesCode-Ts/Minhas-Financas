@@ -21,42 +21,24 @@
       "id": 6
     },
     {
-      "nome": "Esportes",
-      "descricao": "Atividades Esportivas",
-      "id": 7
+      "nome": "Freelancer",
+      "descricao": "Rendimentos como Freelancer",
+      "id": 15
     },
     {
-      "nome": "Carro",
-      "descricao": "Carro",
-      "id": 8
+      "nome": "Alimentação",
+      "descricao": "Gastos com alimentos",
+      "id": 16
     }
   ],
   "entradas": [
     {
-      "nome": "Gás ",
-      "categoriaId": 1,
-      "data": "14/06/2023",
-      "pago": false,
-      "tipo": "despesa",
-      "valor": 70.8,
-      "id": 1
-    },
-    {
-      "nome": "Mercado",
-      "categoriaId": 2,
-      "data": "14/05/2023",
-      "pago": false,
-      "tipo": "despesa",
-      "valor": "5000",
-      "id": 2
-    },
-    {
       "nome": "Salário ",
       "categoriaId": 4,
-      "data": "15/04/2023",
+      "data": "31/10/2023",
       "pago": true,
       "tipo": "receita",
-      "valor": "7000",
+      "valor": 7000,
       "id": 3
     },
     {
@@ -96,15 +78,6 @@
       "id": 23
     },
     {
-      "id": 55,
-      "nome": "Cinema",
-      "categoriaId": 2,
-      "pago": false,
-      "data": "28/04/2023",
-      "valor": 30,
-      "tipo": "despesa"
-    },
-    {
       "nome": "Academia",
       "valor": "100",
       "categoriaId": 2,
@@ -112,15 +85,6 @@
       "tipo": "Despesa",
       "data": "31/10/2023",
       "id": 57
-    },
-    {
-      "nome": "Porta",
-      "valor": "80",
-      "categoriaId": 1,
-      "pago": false,
-      "tipo": "despesa",
-      "data": "Invalid Date",
-      "id": 60
     },
     {
       "nome": "Gás ",
@@ -136,9 +100,18 @@
       "categoriaId": 6,
       "data": "20/11/2023",
       "pago": true,
-      "tipo": "receita",
-      "valor": "500",
+      "tipo": "despesa",
+      "valor": 600,
       "id": 69
+    },
+    {
+      "nome": "Freelancer",
+      "categoriaId": 15,
+      "data": "01/10/2023",
+      "pago": true,
+      "tipo": "receita",
+      "valor": 3000,
+      "id": 70
     }
   ]
 }
