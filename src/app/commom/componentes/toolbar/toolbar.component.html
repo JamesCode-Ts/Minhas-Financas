@@ -1,5 +1,5 @@
 <div >
-<mat-toolbar class="container">
+<mat-toolbar *ngIf="estaLogado" class="container">
     <span>Minhas Finanças</span>
     <span class="example-spacer"></span>
     <div class="menu-item" *ngFor="let m of menu">
@@ -12,7 +12,13 @@
     <div class="menu-item">
         <a routerLink="entradas" routerLinkActive="active">Entradas</a>
     </div>
+
 -->
+    <div class="menu-item">
+        <a (click)="sair()">Sair</a>
+    </div>
+
+
   </mat-toolbar>
 
 </div>
