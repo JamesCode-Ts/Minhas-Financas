@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../../service/authentication.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Login } from '../../models/login.model';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -16,16 +16,29 @@ export class LoginComponent implements OnInit{
 
   loginForm!: FormGroup;
   authLogin!: Login;
+  rota: string = '';
+  estaLogado: boolean = false;
 
 
   constructor(private authenticationService: AuthenticationService,
     private router: Router, 
     private formBuilder: FormBuilder,
-    private _snackBar: MatSnackBar){}
+    private _snackBar: MatSnackBar, private activatedRouter : ActivatedRoute){}
 
 
 
   ngOnInit(): void {
+
+    /*this.rota = this.activatedRouter.snapshot.url[0].path;
+
+    if(this.rota === 'login'){
+      this.estaLogado = false;
+    }else{
+        this.estaLogado = true;
+    }
+
+    */
+    
     this.loginForm = this.formBuilder.group({
       email:['', Validators.compose([Validators.required, Validators.email])],
       password:['', Validators.compose([Validators.required, Validators.minLength(4)])],
