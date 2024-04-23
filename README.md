@@ -21,9 +21,56 @@ Entradas:
 ![Entradas](https://github.com/JamesCode-Ts/Minhas-Financas/assets/63932833/6c468e08-c783-4488-9f50-84e3a7c6a8ec)
 
 
-Tecnologias Utilizadas:
 
-* Angular 15
-* TypeScript
-* Angular Material
+### Para usar este projeto, siga estas etapas:
+
+1. Clone este repositório para o seu computador:
+
+```bash
+git clone https://github.com/JamesCode-Ts/Minhas-Financas
+```
+
+2. Baixa o script de instalação do Node.js
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+
+3. Instala o Node.js (Node Package Manager).
+```bash
+sudo apt install nodejs
+```
+
+4. Instala o NPM
+```bash
+sudo apt install npm
+```
+
+5. Instala todas as dependências listadas no arquivo `package.json`. 
+```bash
+npm install
+```
+6. Este comando utiliza o NPM para instalar globalmente (`-g`) o Angular CLI.
+```bash
+sudo npm -g i @angular/cli
+```
+8. Este comando é usado para iniciar a aplicação. 
+
+```bash
+npm start
+```
+
+9. Navegue até ```http://localhost:4200/ ``` para visualizar a aplicação.
+
+
+## Tecnologias utilizadas:
+
+* #### Angular 15
+
+* #### Angular Material
+
+* #### TypeScript
+
+
+
   
